@@ -24,22 +24,19 @@
         <div class="container" data-aos="fade-up">
             <div class="row gy-4">
 
-                @for ($i = 0; $i < 4; $i++)
-                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                @foreach ($data['model_usaha'] as $item)
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
-                            <img src="assets/img/values-1.png" class="img-fluid" alt="">
-                            <h3>Ad cupiditate sed est odio</h3>
-                            <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.
+                            <img src="assets/img/values-3.png" class="img-fluid" alt="">
+                            <h3>{{ $item->usaha }}</h3>
+                            <p>{{ $item->keterangan }}
                             </p>
-                            <form action="#" method="post">
-                                <button type="submit" class="btn btn-primary"><i class="bi bi-cloud-arrow-down"></i>
-                                    Quisioner</button>
-                            </form>
+                            <a href="{{ url("quisioner/$item->kode") }}" class="align-bottom btn btn-primary"><i
+                                    class="bi bi-cloud-arrow-down"></i>
+                                Download Quisioner</a>
                         </div>
                     </div><!-- End Card Item -->
-                @endfor
-
-
+                @endforeach
             </div>
 
         </div>

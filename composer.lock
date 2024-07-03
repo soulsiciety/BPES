@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03c5fdc4687d970b295d4d0610fc7483",
+    "content-hash": "ba8e5379ba5e13e9954f3ef582725284",
     "packages": [
         {
             "name": "brick/math",
@@ -2725,6 +2725,58 @@
                 }
             ],
             "time": "2024-03-06T16:17:14+00:00"
+        },
+        {
+            "name": "pdfcrowd/pdfcrowd",
+            "version": "5.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pdfcrowd/pdfcrowd-php.git",
+                "reference": "4b9d7777d83c47d3801d2e32ce3ea82bef4fa7b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pdfcrowd/pdfcrowd-php/zipball/4b9d7777d83c47d3801d2e32ce3ea82bef4fa7b9",
+                "reference": "4b9d7777d83c47d3801d2e32ce3ea82bef4fa7b9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "pdfcrowd.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pdfcrowd Team",
+                    "email": "support@pdfcrowd.com",
+                    "homepage": "https://pdfcrowd.com/api/"
+                }
+            ],
+            "description": "A client library for the Pdfcrowd API. It lets you convert between HTML, PDF and various image formats",
+            "homepage": "https://pdfcrowd.com/api/",
+            "keywords": [
+                "api",
+                "client",
+                "convert",
+                "html",
+                "pdf",
+                "web page",
+                "web service"
+            ],
+            "support": {
+                "issues": "https://github.com/pdfcrowd/pdfcrowd-php/issues",
+                "source": "https://github.com/pdfcrowd/pdfcrowd-php/tree/5.20.0"
+            },
+            "time": "2024-06-07T07:41:59+00:00"
         },
         {
             "name": "phpoffice/math",

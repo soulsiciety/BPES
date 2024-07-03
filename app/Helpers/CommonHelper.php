@@ -51,12 +51,16 @@ function quickRandom($length = 16)
     return substr(str_shuffle(str_repeat($pool, 6)), 0, $length);
 }
 
-function numtoalpa($num)
+function numtoalpa($num, $mode = true)
 {
     $alpha = 'abcdefghijklmnopqrstuvwxyz';
     $charactersArray = str_split($alpha);
 
-    return $charactersArray[$num];
+    if ($mode) {
+        return $charactersArray[$num];
+    } else {
+        return array_search($num, $charactersArray);
+    }
 }
 
 function decryptCom($id)
@@ -74,4 +78,16 @@ function cleanString($string)
     $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
 
     return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+}
+
+function getExcelColumnName($index)
+{
+    $column = '';
+
+    while ($index >= 0) {
+        $column = chr(($index % 26) + 65) . $column;
+        $index = floor($index / 26) - 1;
+    }
+
+    return $column;
 }

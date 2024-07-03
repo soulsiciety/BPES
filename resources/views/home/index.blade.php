@@ -9,8 +9,9 @@
                     <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites
                         with Bootstrap</p>
                     <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#about" class="btn-get-started">Buat Quisioner <i class="bi bi-arrow-right"></i></a>
-                        <a href="#data"
+                        <a href="{{ url('quisioner') }}" class="btn-get-started">Unduh Quisioner <i
+                                class="bi bi-arrow-right"></i></a>
+                        <a href="{{ url('quisioner/upload') }}"
                             class="btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i
                                 class="bi bi-cloud-arrow-up"></i><span>Unggah Hasil Quisioner</span></a>
                     </div>
@@ -23,7 +24,7 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Values Section -->
+    {{-- <!-- Values Section -->
     <section id="values" class="values section">
 
         <!-- Section Title -->
@@ -875,6 +876,6 @@
 
         </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Contact Section --> --}}
 
 </x-app-layout>

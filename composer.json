@@ -9,6 +9,7 @@
         "dompdf/dompdf": "^3.0",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
+        "pdfcrowd/pdfcrowd": "^5.20",
         "phpoffice/phpspreadsheet": "*",
         "phpoffice/phpword": "*",
         "tecnickcom/tcpdf": "^6.7"

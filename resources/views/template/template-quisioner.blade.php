@@ -16,8 +16,12 @@
         }
 
         h1,
-        h2 {
+        h2,
+        h3,
+        h4 {
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         label {
@@ -62,9 +66,11 @@
 </head>
 
 <body>
+    Kode : {{ $model_usaha->kode }}
     <div class="container">
         <h1>KUESIONER</h1>
-        <h2>Bidang Usaha: {{ $model_usaha->usaha }}</h2>
+        {{-- <h4>Nama Usaha: {{ $nama_usaha }}</h4> --}}
+        <h4>Bidang Usaha: {{ $model_usaha->usaha }}</h4>
         <div class="instructions">
             <p>Pengisian ini dilakukan dengan cara memberikan tanda centang (<input type="checkbox" checked="checked" />)
                 pada salah satu

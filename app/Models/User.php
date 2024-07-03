@@ -44,4 +44,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function kewenangan()
+    {
+        return $this->hasOne(MKewenangan::class, 'id', 'id_kewenangan');
+    }
 }

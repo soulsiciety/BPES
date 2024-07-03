@@ -18,7 +18,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             {{-- <h2>Starter Section</h2> --}}
-            <p>Unggah Hasil Quisioner</p>
+            <p>Unduh Quisioner</p>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up">
@@ -28,35 +28,32 @@
                         <div class="row gy-4">
 
                             <div class="col-md-6">
-                                <label for="exampleFormControlInput1">Nama Perusahaan</label>
+                                <label for="exampleFormControlInput1">Nama Usaha</label>
                                 <input type="text" name="name" class="form-control" placeholder="Your Name"
                                     required="">
                             </div>
 
                             <div class="col-md-6 ">
-                                <label for="exampleFormControlInput1">Kategori Perusahaan</label>
+                                <label for="exampleFormControlInput1">Kategori Usaha</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    @foreach ($data['model_usaha'] as $item)
+                                        <option value="{{ $item->kode }}">{{ $item->usaha }}</option>
+                                    @endforeach
                                 </select>
                             </div>
 
                             <div class="col-md-12">
-                                <label for="exampleFormControlFile1">Example file input</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <label for="exampleFormControlInput1">Email</label>
+                                <input type="text" name="email" class="form-control" placeholder="Email"
+                                    required="">
                             </div>
 
-
-
                             <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="d-none loading">Loading</div>
+                                <div class="d-none error-message"></div>
+                                <div class="d-none sent-message">Your message has been sent. Thank you!</div>
 
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="submit" class="btn w-100 btn-primary">Buat</button>
                             </div>
 
                         </div>
