@@ -7,13 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Buyer Persona Expert System (BPES)
+## About Laravel
 
-This repository contains the research artifacts supporting the article:
-**"An Ontology-Based Buyer Persona Expert System with Explainable Rule-Based Inference"**
-(*Under review at a Q1 journal*)
-
-The project presents an explainable buyer persona generation approach based on ontology-driven knowledge modeling and rule-based expert system inference, designed to support transparent and auditable decision-making in digital marketing contexts.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
