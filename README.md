@@ -70,10 +70,7 @@ Each asset is listed below with its access conditions and licensing information.
 ### 7. Restricted Raw Human Data
 - **Description**: Raw individual-level survey responses collected during the knowledge acquisition phase.
 - **Availability**: Not publicly shared to protect participant confidentiality and comply with ethical approval conditions.
-- **Qualified Access Procedure**: Access to raw data may be requested for academic research purposes by contacting the corresponding author. Requests should include:
-- institutional affiliation,
-- research objectives,
-- evidence of ethics approval or exemption (if applicable).  
+- **Qualified Access Procedure**: Access to raw data may be requested for academic research purposes by contacting the corresponding author. Requests should include: institutional affiliation, research objectives evidence of ethics approval or exemption (if applicable).
 All requests will be reviewed in accordance with institutional and national data protection regulations.
 
 
