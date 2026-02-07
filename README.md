@@ -9,7 +9,7 @@ The project presents an explainable buyer persona generation approach based on o
 ## Directory Structure
 
 <p align="center">
-<img src="https://github.com/soulsiciety/quisioner-usaha/blob/main/images/directory_structure.png" alt="Directory Structure">
+<img src="https://github.com/soulsiciety/BPES/blob/main/images/directory_structure.png" alt="Directory Structure">
 </p>
 
 ## Data Availability Statement
@@ -19,42 +19,42 @@ Each asset is listed below with its access conditions and licensing information.
 ### 1. Survey Instrument
 - **Description**: Questionnaire used to collect buyer-related empathic, behavioral, and demographic attributes.
 - **Location**: `data/survey_instrument/survey_instrument.pdf`
-- **Persistent link**: https://github.com/soulsiciety/quisioner-usaha/releases/tag/v1.0-bpes-data
+- **Persistent link**: https://github.com/soulsiciety/BPES/releases/tag/v1.0-bpes-data
 - **Access**: Open access
 - **License**: CC BY-NC 4.0
 
 ### 2. Aggregated Themes and Analytical Results
 - **Description**: Anonymized and aggregated thematic summaries derived from survey responses. These indicators directly correspond to the ontology scope (Table 2) and buyer persona mappings (Table 3), enabling transparent and reproducible rule-based persona inference without disclosing respondent-level data. Raw survey responses are not shared due to ethical and consent constraints.
 - **Location**: `data/aggregated_results/thematic_summary.csv`
-- **Persistent link**: https://github.com/soulsiciety/quisioner-usaha/releases/tag/v1.0-bpes-data
+- **Persistent link**: https://github.com/soulsiciety/BPES/releases/tag/v1.0-bpes-data
 - **Access**: Open access (aggregated data only)
 - **License**: CC BY-NC 4.0
 
 ### 3. Buyer Persona Ontology
 - **Description**: OWL ontology formalizing the buyer persona knowledge model used in BPES, including concepts, properties, and relationships derived from the ontology scope and indicator mappings reported in the main manuscript (Tables 2–3). This ontology provides the semantic foundation for rule-based inference and explainable persona generation described in Supplementary Material C.
 - **Location**: `ontology/buyer_persona_ontology.owl`
-- **Persistent link**: https://github.com/soulsiciety/quisioner-usaha/releases/tag/v1.0-bpes-data
+- **Persistent link**: https://github.com/soulsiciety/BPES/releases/tag/v1.0-bpes-data
 - **Access**: Open access
 - **License**: CC BY 4.0
 
 ### 4. Rule-Based Inference Assets
 - **Description**: Machine-readable representation of the explicit IF–THEN inference rules, indicator mappings, and aggregation logic used by BPES. This artifact operationalizes the knowledge representation tables and persona classification rules reported in the main manuscript (Tables 4–5) and provides the executable realization of the inference flow detailed in Supplementary Material C.
 - **Location**: `rules/inference_rules.json`
-- **Persistent link**: https://github.com/soulsiciety/quisioner-usaha/releases/tag/v1.0-bpes-data
+- **Persistent link**: https://github.com/soulsiciety/BPES/releases/tag/v1.0-bpes-data
 - **Access**: Open access
 - **License**: MIT License
 
 ### 5. Test Cases
 - **Description**: Synthetic and anonymized system-level test cases derived from black-box testing scenarios, used to validate questionnaire handling, business registration, and the end-to-end execution of rule-based buyer persona inference in BPES. These cases verify that the inference pipeline described in Supplementary Material C is correctly triggered and operationalized at the system level, without exposing respondent-level data.
 - **Location**: `data/test_cases/persona_cases.json`
-- **Persistent link**: https://github.com/soulsiciety/quisioner-usaha/releases/tag/v1.0-bpes-data
+- **Persistent link**: https://github.com/soulsiciety/BPES/releases/tag/v1.0-bpes-data
 - **Access**: Open access
 - **License**: MIT License
 
 ### 6. Source Code
 - **Description**: Open-source implementation of the Buyer Persona Expert System (BPES), including the rule-based inference engine, ontology integration, and persona generation logic. The system is implemented using the Laravel framework, with inference-related components located within the application layer.
 - **Location**: `source_code/`
-- **Persistent link**: https://github.com/soulsiciety/quisioner-usaha/releases/tag/v1.0-bpes-data
+- **Persistent link**: https://github.com/soulsiciety/BPES/releases/tag/v1.0-bpes-data
 - **Access**: Open access
 - **License**: MIT License (OSI-approved)
 
@@ -105,6 +105,6 @@ If this work is used or extended, the authors kindly request citation of:
 
 **Recommended citation format:**
 > Author(s). **An Ontology-Based Buyer Persona Expert System with Explainable Rule-Based Inference**. Journal Name, under review.
-> GitHub repository: Buyer Persona Expert System (BPES), version v1.0. https://github.com/soulsiciety/quisioner-usaha
+> GitHub repository: Buyer Persona Expert System (BPES), version v1.0. https://github.com/soulsiciety/BPES
 
 The repository represents a research artifact supporting the reproducibility of the proposed method.
