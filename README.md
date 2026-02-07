@@ -18,7 +18,7 @@ The project presents an explainable buyer persona generation approach based on o
 ## Directory Structure
 
 <p align="center">
-<img src="https://drive.google.com/file/d/1TUnw0Bp1XgAZN4LR8bzInXodEmD0r8wC/view?usp=sharing" alt="Directory Structure">
+<img src="https://drive.google.com/file/d/1TUnw0Bp1XgAZN4LR8bzInXodEmD0r8wC/view" alt="Directory Structure">
 </p>
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
