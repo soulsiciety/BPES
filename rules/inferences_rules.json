@@ -1,0 +1,149 @@
+{
+  "rule_sets": {
+
+    "rule_pi_usaha": {
+      "description": "Business-type–driven persona eligibility rules",
+      "input_source": "business_type (survey Section A)",
+      "rules": [
+        {
+          "if": { "business_type_code": "UH01" },
+          "then": ["PI01", "PI02", "PI03", "PI04"]
+        },
+        {
+          "if": { "business_type_code": "UH02" },
+          "then": ["PI01", "PI10", "PI11", "PI03", "PI04", "PI05", "PI06", "PI07"]
+        },
+        {
+          "if": { "business_type_code": "UH03" },
+          "then": ["PI05", "PI08", "PI09"]
+        },
+        {
+          "if": { "business_type_code": "UH04" },
+          "then": ["PI01", "PI03", "PI05", "PI10"]
+        },
+        {
+          "if": { "business_type_code": "UH05" },
+          "then": ["PI03", "PI05", "PI08", "PI09"]
+        }
+      ]
+    },
+
+    "rule_klasifikasi_pi": {
+      "description": "Deterministic personal identity classification rules",
+      "input_indicators": [
+        "age",
+        "gender",
+        "education",
+        "occupation",
+        "income",
+        "marital_status",
+        "no_of_children"
+      ],
+      "source_file": "thematic_summary.csv (Customer Demography)",
+      "rules": [
+        {
+          "if": ["PK01_OR_PK02", "PN01", "US01_OR_US02_OR_US03", "AN01"],
+          "then": { "persona_identity": "PI01", "label": "Student" }
+        },
+        {
+          "if": ["GN02", "PN02_OR_PN03", "AN02_OR_AN03_OR_AN04"],
+          "then": { "persona_identity": "PI02", "label": "Mother" }
+        },
+        {
+          "if": ["US04_OR_US05", "PK04_OR_PK05_OR_PK06_OR_PK07_OR_PK08"],
+          "then": { "persona_identity": "PI03", "label": "Active Worker" }
+        },
+        {
+          "if": ["PK06"],
+          "then": { "persona_identity": "PI04", "label": "MSME Owner" }
+        },
+        {
+          "if": ["PK09"],
+          "then": { "persona_identity": "PI05", "label": "Company" }
+        }
+      ]
+    },
+
+    "rule_rep_likert": {
+      "description": "Likert scale normalization rules",
+      "used_for_indicators": [
+        "service_quality",
+        "expectations",
+        "importance",
+        "satisfaction"
+      ],
+      "mapping": [
+        { "code": "LK01", "label": "Not Important", "score": 1 },
+        { "code": "LK02", "label": "Moderately Important", "score": 2 },
+        { "code": "LK03", "label": "Very Important", "score": 3 }
+      ]
+    },
+
+    "rule_rep_ratingPP": {
+      "description": "Product and service preference aggregation rules",
+      "input_indicators": [
+        "physical_facilities",
+        "lighting",
+        "product_clarity",
+        "noise_level",
+        "UI_sosmed",
+        "UI_web",
+        "staff_behavior",
+        "service_quality",
+        "image_staff",
+        "empathy"
+      ],
+      "source_file": "thematic_summary.csv (See, Think and Feel)",
+      "aggregation_method": "mean_score",
+      "score_ranges": [
+        {
+          "range": "1.0–1.7",
+          "preference_level": "Not Important",
+          "visual_marker": 1
+        },
+        {
+          "range": "1.8–2.5",
+          "preference_level": "Moderately Important",
+          "visual_marker": 2
+        },
+        {
+          "range": "2.6–3.0",
+          "preference_level": "Very Important",
+          "visual_marker": 3
+        }
+      ],
+      "formula": "R_s = R_total / m"
+    },
+
+    "rule_rep_persona_needs": {
+      "description": "Persona needs and gains formulation rules",
+      "input_indicators": [
+        "needs",
+        "benefit",
+        "satisfaction",
+        "importance",
+        "improvement_suggestions"
+      ],
+      "source_file": "thematic_summary.csv (Say and Do, Pains and Gains, Needs)",
+      "aggregation_method": "ranking_and_selection",
+      "explainability_note": "Needs are derived from aggregated respondent expressions and Likert-normalized importance scores."
+    },
+
+    "rule_rep_personal_identity": {
+      "description": "Persona narrative construction rules",
+      "components": [
+        "persona_identity_label",
+        "formal_description",
+        "behavioral_story",
+        "representative_visual"
+      ],
+      "input_dependencies": [
+        "persona_identity",
+        "business_type",
+        "aggregated_preferences",
+        "persona_needs"
+      ],
+      "explainability_note": "Narratives are generated using predefined templates linked to persona identity and business type, ensuring rule-level explainability."
+    }
+  }
+}

@@ -1,0 +1,754 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2/"
+     xml:base="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:BPESver2="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#askedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#askedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#asking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#asking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#asking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classifiedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classifiedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classify"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classify">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#countedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#countedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#counting"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_likert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#counting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#counting">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_likert"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#generate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#generate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#generatedby"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#generatedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#generatedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#resume -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#resume">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#resumedby"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_promosi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#resumedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#resumedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_promosi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#answer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#answer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#category_ques -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#category_ques">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classpi_if -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classpi_if">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classpi_then -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#classpi_then">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_business -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_child -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_child">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_noofchildren"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_classpi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_classpi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_edu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_edu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_income -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_income">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_income"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_job -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_job">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_occupation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_likert -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_likert">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_likert"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_marital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_marital">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_marital_status"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_needs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_needs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_needs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_pains -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_pains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_pains"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_pi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_pi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_pp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_pp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_promo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_promo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_promosi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_ques -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_ques">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_saydo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#code_saydo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_saydo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#desc_pi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#desc_pi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#description_pp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#description_pp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_business -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_child -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_child">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_noofchildren"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_edu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_edu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_income -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_income">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_income"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_job -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_job">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_occupation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_likert -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_likert">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_likert"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_marital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_marital">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_marital_status"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_needs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_needs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_needs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_pains -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_pains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_pains"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_promo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_promo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_promosi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_ques -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_ques"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_saydo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#name_saydo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#photo_pi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#photo_pi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#poin_likert -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#poin_likert"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#range_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#range_age"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#story_pi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#story_pi"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_CEhear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_CEhear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_CEsee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_CEsee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_demography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_demography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_gain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_gain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_needs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_needs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_pain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_saydo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_saydo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_thinkfeel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#ques_thinkfeel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_income -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_income">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_likert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_likert"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_marital_status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_marital_status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_needs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_needs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_noofchildren -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_noofchildren">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_occupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_occupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_pains -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_pains">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_promosi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_promosi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_questions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_ratingPP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#buyer_persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_saydo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_saydo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rep_personal_identity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_class_pi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Accommodation_and_food_and_beverage_providers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Accommodation_and_food_and_beverage_providers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Entertainment_and_Recreation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Entertainment_and_Recreation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Information_and_Communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Information_and_Communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+        <BPESver2:code_business>UH02</BPESver2:code_business>
+        <BPESver2:name_business>Information and Communication</BPESver2:name_business>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Processing_industry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#Processing_industry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cahya/ontologies/2024/5/BPESver2#rule_pi_business"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

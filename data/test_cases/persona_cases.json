@@ -1,0 +1,126 @@
+[
+  {
+    "case_id": "TC01",
+    "module": "Questionnaire Input",
+    "actor": "Respondent",
+    "scenario": "Respondent submits questionnaire with name and all required answers",
+    "input_conditions": {
+      "respondent_name": "provided",
+      "required_questions": "completed"
+    },
+    "expected_output": "System confirms submission and displays success notification",
+    "actual_output": "System confirms submission and displays success notification",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC02",
+    "module": "Questionnaire Input",
+    "actor": "Respondent",
+    "scenario": "Respondent submits questionnaire without name but completes all required answers",
+    "input_conditions": {
+      "respondent_name": "not_provided",
+      "required_questions": "completed"
+    },
+    "expected_output": "System confirms submission and displays success notification",
+    "actual_output": "System confirms submission and displays success notification",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC03",
+    "module": "Questionnaire Input",
+    "actor": "Respondent",
+    "scenario": "Respondent submits questionnaire with missing required answer",
+    "input_conditions": {
+      "respondent_name": "not_provided",
+      "required_questions": "incomplete"
+    },
+    "expected_output": "System displays validation message indicating required field",
+    "actual_output": "System displays validation message indicating required field",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC04",
+    "module": "Business Registration",
+    "actor": "Business Owner",
+    "scenario": "Business owner completes all required business registration fields",
+    "input_conditions": {
+      "mandatory_fields": "completed"
+    },
+    "expected_output": "System confirms action and displays success notification",
+    "actual_output": "System confirms action and displays success notification",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC05",
+    "module": "Business Registration",
+    "actor": "Business Owner",
+    "scenario": "Business owner submits registration with missing mandatory fields",
+    "input_conditions": {
+      "mandatory_fields": "incomplete"
+    },
+    "expected_output": "System displays validation message indicating required field",
+    "actual_output": "System displays validation message indicating required field",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC06",
+    "module": "Business Lookup",
+    "actor": "Business Owner",
+    "scenario": "Business owner searches using a valid business code",
+    "input_conditions": {
+      "business_code": "valid"
+    },
+    "expected_output": "System displays buyer persona dashboard including respondent data, segmentation charts, and business identity",
+    "actual_output": "System displays buyer persona dashboard including respondent data, segmentation charts, and business identity",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC07",
+    "module": "Business Lookup",
+    "actor": "Business Owner",
+    "scenario": "Business owner searches without providing business code",
+    "input_conditions": {
+      "business_code": "not_provided"
+    },
+    "expected_output": "System displays validation message indicating required field",
+    "actual_output": "System displays validation message indicating required field",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC08",
+    "module": "Inference Engine",
+    "actor": "System",
+    "scenario": "System generates buyer persona based on business category and aggregated respondent inputs",
+    "input_conditions": {
+      "business_category": "provided",
+      "respondent_data": "aggregated"
+    },
+    "expected_output": "Buyer persona is generated and visualized on the dashboard",
+    "actual_output": "Buyer persona is generated and visualized on the dashboard",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC09",
+    "module": "Persona Visualization",
+    "actor": "Business Owner",
+    "scenario": "Business owner views detailed buyer persona information",
+    "input_conditions": {
+      "persona_available": true
+    },
+    "expected_output": "Detailed buyer persona information is displayed",
+    "actual_output": "Detailed buyer persona information is displayed",
+    "validation_result": "valid"
+  },
+  {
+    "case_id": "TC10",
+    "module": "Persona Selection",
+    "actor": "Business Owner",
+    "scenario": "Business owner selects a buyer persona from available persona list",
+    "input_conditions": {
+      "persona_selection": "selected"
+    },
+    "expected_output": "Selected buyer persona is displayed",
+    "actual_output": "Selected buyer persona is displayed",
+    "validation_result": "valid"
+  }
+]

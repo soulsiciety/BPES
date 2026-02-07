@@ -1,0 +1,36 @@
+customer_variable,indicator,indicator_code,description,example_aggregated_terms
+Customer Demography,age,DEM01,Categorized age ranges used for persona classification,18–25; 26–35; 36–45; >45
+Customer Demography,gender,DEM02,Gender category for demographic profiling,male; female
+Customer Demography,education,DEM03,Highest education level,secondary; diploma; undergraduate; postgraduate
+Customer Demography,occupation,DEM04,Primary occupation category,student; employee; entrepreneur; professional
+Customer Demography,income,DEM05,Income range category,low; medium; high
+Customer Demography,marital_status,DEM06,Marital status category,single; married
+Customer Demography,no_of_children,DEM07,Number of children category,none; one; more than one
+Customer Element (See),physical_facilities,SEE01,Perceived condition of physical facilities,bersih; nyaman; menarik
+Customer Element (See),lighting,SEE02,Lighting condition adequacy,cukup; terang
+Customer Element (See),product_clarity,SEE03,Clarity of product or service information,jelas; mudah dipahami
+Customer Element (See),noise_level,SEE04,Environmental noise condition,nyaman; ramai
+Customer Element (See),UI_sosmed,SEE05,Social media interface quality,informatif; menarik
+Customer Element (See),UI_web,SEE06,Website interface quality,sederhana; jelas
+Customer Element (See),staff_behavior,SEE07,Observed staff behavior,ramah; sopan; profesional
+Customer Element (Hear),staff_communication,HEAR01,Quality of communication from staff,jelas; sopan; responsif
+Customer Element (Hear),friend_recommendations,HEAR02,Influence of friend recommendations,ada; tidak ada
+Customer Element (Hear),social_media_recommendations,HEAR03,Influence of social media recommendations,ada; tidak ada
+Customer Element (Hear),viral_recommendations,HEAR04,Influence of viral or trending information,ada; tidak ada
+Customer Element (Think and Feel),service_quality,TF01,Perceived service quality,baik; bagus; memuaskan
+Customer Element (Think and Feel),image_staff,TF02,Perceived image of staff,ramah; profesional; responsif
+Customer Element (Think and Feel),response_to_complaint,TF03,Perceived response to complaints,cepat; sopan; ditangani dengan baik
+Customer Element (Think and Feel),empathy,TF04,Perceived empathy and care,tinggi; peduli
+Customer Element (Think and Feel),gender_similarity,TF05,Perceived gender equality or similarity,ada; tidak ada; tidak tahu
+Customer Element (Think and Feel),promotion_approach,TF06,Experienced promotion approach,word-of-mouth; social media; brochures; advertising
+Customer Element (Say and Do),opinion_on_business,SD01,Expressed opinion toward the business,penting; bermanfaat; inovatif
+Customer Element (Say and Do),expectations,SD02,Customer expectations toward the business,bersih; cepat tanggap; berkualitas; ramah; harga sesuai
+Customer Element (Say and Do),needs,SD03,Expressed customer needs related to value and service,kualitas layanan; kenyamanan; keterjangkauan
+Customer Element (Say and Do),possibility_to_recommend,SD04,Willingness to recommend the business,mungkin; tidak
+Customer Element (Pains and Gains),complaint,PG01,Reported customer complaints,kebersihan; harga tinggi; pelayanan lambat
+Customer Element (Pains and Gains),problems,PG02,Operational or service problems encountered,antrean panjang; produk habis; sistem bermasalah
+Customer Element (Pains and Gains),improvement_suggestions,PG03,Customer suggestions for improvement,peningkatan kebersihan; kecepatan layanan; harga kompetitif
+Customer Element (Pains and Gains),benefit,PG04,Perceived benefits gained as customer,puas; senang; pengalaman baru
+Customer Element (Pains and Gains),satisfaction,PG05,Overall satisfaction level,puas; sangat puas
+Customer Element (Needs),importance,NEED01,Perceived importance level of service attributes,sangat penting; penting; cukup penting
+Customer Element (Needs),satisfaction,NEED02,Satisfaction as fulfillment of needs,puas; sangat puas
